@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let tong = 0;
+    let TB = 0
+    let arr1 = []
+
+    function Sum(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            tong += arr[i];
+        }
+        TB = tong / arr.length
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > TB) {
+                document.write(" So lon hon trung binh cong cua mang la : " + arr[i])
+                document.write("<br>")
+            }
+        }
+        document.write(" Tong cac phan tu trong mang la : " + tong)
+        document.write("<br>")
+        document.write(" Trung binh cong cua cac phan tu trong mang la : " + TB)
+        document.write("<br>")
+
+
+    }
+
+    Sum([1, 2, 3, 4, 20])
+
+
+</script>
+</body>
+</html>

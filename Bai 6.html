@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+
+    function checkNumber(arr, number) {
+        number = parseInt(number)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.indexOf(number) >= 0) {
+                document.write(" Phan tu " + number + " co trong mang")
+                break;
+            } else {
+                document.write(" Phan tu " + number + " khong tim thay trong mang")
+                break;
+            }
+        }
+
+    }
+
+    checkNumber([1, 2, 3, 4, 5, 6, 7], 7)
+
+</script>
+</body>
+</html>
